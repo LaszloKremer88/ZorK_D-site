@@ -1,0 +1,145 @@
+/* Alapok */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* NavigĂĄciĂł */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+/* Hero szekciĂł */
+.tagline {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #105fd457, #5880b4ce);
+  color: white;
+}
+
+.tagline h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #f15025;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #f15025;
+  color: white;
+}
+
+/* Tapasztalat */
+.tapasztalat {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.tapasztalat h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tapasztalat > div:not(.container) {
+  display: inline-block;
+  width: 200px;
+  padding: 1rem;
+  margin: 1rem;
+  background: #f5f5f5;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.tapasztalat > div:hover {
+  transform: translateY(-5px);
+}
+
+.tapasztalat img {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Projektek */
+.projektek {
+  background-color: hsl(171, 20%, 74%);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-container {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.project-container:hover {
+  transform: translateY(-5px);
+}
+
+.project__img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* LĂĄblĂŠc */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
